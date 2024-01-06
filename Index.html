@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/jpg/png" href="https://uxwing.com/wp-content/themes/uxwing/download/medical-science-lab/high-temperature-icon.png"/>
+    <title>TempEase</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="https://uxwing.com/wp-content/themes/uxwing/download/medical-science-lab/high-temperature-icon.png" alt="TempEase Logo" class="logo">
+            <h1>TempEase Converter</h1>
+        </header>
+        <label for="temperature">Enter Temperature:</label><br><br>
+        <input type="text" id="temperature" placeholder="Enter temperature" required><br>
+        <br><br>
+        
+        <label for="unit">Unit:</label><br><br>
+        <select id="unit">
+            <option value="celsius">Celsius</option>
+            <option value="fahrenheit">Fahrenheit</option>
+        </select><br><br>
+        
+        <button onclick="convertTemperature()">Convert</button><br>
+        <br><br>
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
